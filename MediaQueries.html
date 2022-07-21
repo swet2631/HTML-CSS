@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        .container {
+            background-color: black;
+            color:white;
+            height: 40vh;
+            width: 100vw;
+        }
+
+        /* when screen size is 800px than its background color change */
+        @media screen and (max-width:800px) {
+            body {
+                background-color: aqua;
+            }
+            .container {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            body {
+                background-color: antiquewhite;
+            }
+            .container {
+                background-color: brown;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h4>Media Queries Example</h4>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laborum error officiis perferendis impedit quam dolorem? Sunt, eos eaque qui modi iure natus impedit quibusdam cumque saepe officiis dolore dignissimos facere asperiores expedita earum quis. Temporibus veritatis exercitationem consectetur quos iusto aspernatur id, voluptates, esse mollitia aperiam at ipsa illo.</div>
+</body>
+</html>
